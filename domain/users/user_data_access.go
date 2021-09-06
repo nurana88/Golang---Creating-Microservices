@@ -3,10 +3,11 @@ package users
 import (
 	"fmt"
 
-	"github.com/nurana/microservices/database/mysql"
-	"github.com/nurana/microservices/utils/errors"
-	"github.com/nurana/microservices/utils/mysql_utils"
 	"strings"
+
+	"github.com/nurana88/microservices/database/mysql"
+	"github.com/nurana88/microservices/utils/errors"
+	"github.com/nurana88/microservices/utils/mysql_utils"
 )
 
 const (
@@ -130,7 +131,7 @@ func (user *User) FindByEmailAndPassword() *errors.RestErr {
 	result := stmt.QueryRow(user.Email, user.Password)
 
 	if getErr := result.Scan(&user.Id, &user.FirstName, &user.LastName, &user.Email, &user.DateCreated, &user.Status); getErr != nil {
-		if strings.Contains(getErr.Error(),mysql_utils.ErrorNoRows){
+		if strings.Contains(getErr.Error(), mysql_utils.ErrorNoRows) {
 			return errors.NewNotFoundError("invalid user credentials")
 		}
 		fmt.Println("error when trying to prepare get user by email and password", getErr)

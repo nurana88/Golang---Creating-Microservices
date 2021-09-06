@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/nurana/microservices/app"
+	"github.com/nurana88/microservices/app"
 )
 
 func main() {

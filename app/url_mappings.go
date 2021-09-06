@@ -1,8 +1,8 @@
 package app
 
 import (
-	controllers "github.com/nurana/microservices/controllers/ping"
-	"github.com/nurana/microservices/controllers/users"
+	controllers "github.com/nurana88/microservices/controllers/ping"
+	"github.com/nurana88/microservices/controllers/users"
 )
 
 func MapUrls() {
@@ -14,5 +14,5 @@ func MapUrls() {
 	router.PATCH("/users/:user_id", users.UpdateUser)
 	router.DELETE("/users/:user_id", users.DeleteUser)
 	router.GET("/internal/users/search", users.Search)
-	router.POST("/users/login",users.Login)
+	router.POST("/users/login", users.Login)
 }

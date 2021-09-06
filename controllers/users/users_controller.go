@@ -5,10 +5,10 @@ import (
 	"strconv"
 
 	"github.com/gin-gonic/gin"
-	"github.com/nurana/microservices/domain/users"
-	"github.com/nurana/microservices/services"
-	"github.com/nurana/microservices/utils/errors"
-	"github.com/nurana/oauth_go/oauth-go/oauth"
+	"github.com/nurana88/microservices/domain/users"
+	oauth "github.com/nurana88/microservices/oauth_go"
+	"github.com/nurana88/microservices/services"
+	"github.com/nurana88/microservices/utils/errors"
 
 	"fmt"
 )

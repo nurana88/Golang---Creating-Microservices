@@ -1,10 +1,10 @@
 package services
 
 import (
-	"github.com/nurana/microservices/domain/users"
-	"github.com/nurana/microservices/utils/crypto_utils"
-	"github.com/nurana/microservices/utils/date_utils"
-	"github.com/nurana/microservices/utils/errors"
+	"github.com/nurana88/microservices/domain/users"
+	"github.com/nurana88/microservices/utils/crypto_utils"
+	"github.com/nurana88/microservices/utils/date_utils"
+	"github.com/nurana88/microservices/utils/errors"
 )
 
 var (

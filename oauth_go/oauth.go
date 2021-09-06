@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/mercadolibre/golang-restclient/rest"
-	"github.com/nurana/oauth_go/oauth-go/oauth/errors"
+	"github.com/nurana88/microservices/oauth_go/errors"
 )
 
 const (
